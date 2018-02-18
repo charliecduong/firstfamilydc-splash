@@ -184,6 +184,9 @@ input {
   width: 100%;
   margin: 0 auto;
   margin-bottom: 20px; }
+  @media screen and (max-width: 320px) {
+    #input-container {
+      top: 400px; } }
   #input-container #mc_embed_signup {
     text-align: center; }
     #input-container #mc_embed_signup #submit-button {
