@@ -73,6 +73,9 @@
   width: 100%;
   margin: 0 auto;
   margin-bottom: 20px;
+  @media screen and (max-width: 320px) {
+    top: 400px;
+  }
   #mc_embed_signup {
     text-align: center;
     #submit-button {
