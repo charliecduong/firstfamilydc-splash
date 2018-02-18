@@ -63,6 +63,8 @@ input {
   margin-bottom: 10px;
   font-size: 18px;
   font-family: $font-sans-serif;
+  border-radius: 0;
+  -webkit-appearance: none;
   &:focus {
     outline: none;
   }
