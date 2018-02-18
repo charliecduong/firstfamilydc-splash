@@ -1,0 +1,109 @@
+@import "bourbon/bourbon";
+
+#main {
+  position: relative;
+  display: block;
+  width: 100vw;
+  height: 92vh;
+}
+
+.wrap {
+    position: relative;
+    max-width: 767px;
+    margin: 0 auto;
+}
+
+.background {
+  @include position(fixed, 0px 0px 0px 0px);
+}
+
+.gradient1 {
+  @include linear-gradient(to bottom, $color-gradient1, $color-gradient2);
+  @include animation(fadeOut 10s ease);
+  @include animation-fill-mode(forwards);
+  @include animation-iteration-count(1);
+}
+
+.gradient2 {
+  @include linear-gradient(to bottom, $color-pink, $color-pink);
+  @include animation(fadeIn 10s ease);
+  @include animation-fill-mode(forwards);
+  @include animation-iteration-count(1);
+}
+
+#svg-container {
+  .svg-wrapper {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 75px;
+    svg {
+      display: block !important;
+      position: relative;
+      margin-left:auto;
+      margin-right:auto;
+      @media screen and (max-width: 320px) {
+        width: 250px !important;
+      }
+    }
+  }
+}
+
+#logo {
+  fill: #000;
+  opacity: 0;
+  @include animation(fadeIn 2s ease);
+  @include animation-delay(2s);
+  @include animation-fill-mode(forwards);
+}
+
+#logo-draw {
+  stroke: rgba(#000 ,0.5);
+  stroke-width: 10px;
+  @include animation(fadeOut 1s ease);
+  @include animation-delay(2.75s);
+  @include animation-fill-mode(forwards);
+}
+
+#input-container {
+  display: block;
+  position: relative;
+  top: 430px;
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  #mc_embed_signup {
+    text-align: center;
+    #submit-button {
+      opacity: 0;
+      &.on {
+        opacity: 1;
+        animation: fadeIn 200ms linear;
+      }
+    }
+  }
+  #footer {
+    font-size: 8px;
+    position: relative;
+    text-align: center;
+    margin-top: 75px;
+    #social {
+      a {
+        font-size: 24px;
+        color: #000;
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
+    p {
+      margin: 10px 0;
+    }
+  }
+}
+@media screen and (max-width: $mobile-breakpoint) {
+  .wrap {
+    margin: 0 15px;
+  }
+}
