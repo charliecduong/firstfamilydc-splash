@@ -199,11 +199,11 @@ input {
   #input-container #footer {
     font-size: 8px;
     position: relative;
-    text-align: center;
-    margin-top: 75px; }
+    text-align: center; }
     #input-container #footer #social a {
       font-size: 24px;
-      color: #000; }
+      color: #000;
+      padding: 0 5px; }
       #input-container #footer #social a:hover {
         color: #fff; }
     #input-container #footer p {
