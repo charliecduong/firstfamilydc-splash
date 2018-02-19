@@ -95,8 +95,7 @@ input {
 #main {
   position: relative;
   display: block;
-  width: 100vw;
-  height: 92vh; }
+  width: 100vw; }
 
 .wrap {
   position: relative;
