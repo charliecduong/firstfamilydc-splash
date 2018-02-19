@@ -76,6 +76,9 @@
   @media screen and (max-width: 320px) {
     top: 375px;
   }
+  .title {
+    text-align: center;
+  }
   #mc_embed_signup {
     text-align: center;
     #submit-button {
@@ -90,7 +93,7 @@
     font-size: 8px;
     position: relative;
     text-align: center;
-    margin-bottom: 20px;
+    margin: 20px 0;
     #social {
       a {
         font-size: 24px;
