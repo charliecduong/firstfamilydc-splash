@@ -190,6 +190,8 @@ input {
     #input-container {
       top: 375px; } }
   #input-container .title {
+    font-size: 700;
+    font-style: italic;
     text-align: center; }
   #input-container #mc_embed_signup {
     text-align: center; }
