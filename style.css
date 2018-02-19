@@ -184,7 +184,8 @@ input {
   max-width: 500px;
   width: 100%;
   margin: 0 auto;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  overflow: auto; }
   @media screen and (max-width: 320px) {
     #input-container {
       top: 375px; } }
