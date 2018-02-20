@@ -141,7 +141,7 @@ input {
   display: block;
   position: absolute;
   width: 100%;
-  top: 75px; }
+  top: 300px; }
   #svg-container .svg-wrapper svg {
     display: block !important;
     position: relative;
@@ -178,7 +178,7 @@ input {
   animation-fill-mode: forwards; }
 
 #input-container {
-  display: block;
+  display: none;
   position: relative;
   top: 430px;
   max-width: 500px;
