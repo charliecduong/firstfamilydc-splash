@@ -43,9 +43,8 @@ h3 {
 }
 
 a {
-  /*#F9F9EF*/
   text-decoration: none;
-  //color: $color-link;
+  color: $color-text;
   font-weight: 700;
   -o-transition: .5s;
   -ms-transition: .5s;
@@ -53,8 +52,8 @@ a {
   -webkit-transition: .5s;
   transition: .5s;
   &:hover {
-    //color: $color-text;
-    //border-bottom: 2px $color-link solid;
+    color: white;
+    //border-bottom: 2px white solid;
   }
 }
 
@@ -68,7 +67,8 @@ input {
   &:focus {
     outline: none;
   }
-  &[type=email] {
+  &[type=email],
+  &[type=text] {
     color: #000;
     width: 100%;
     max-width: 500px;
