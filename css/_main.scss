@@ -44,16 +44,16 @@
 
 .gradient1 {
   @include linear-gradient(to bottom, $color-gradient1, $color-gradient2);
-  //@include animation(fadeOutIn 25s ease);
-  //@include animation-fill-mode(forwards);
-  //@include animation-iteration-count(infinite);
+  @include animation(fadeOutIn 25s ease);
+  @include animation-fill-mode(forwards);
+  @include animation-iteration-count(infinite);
 }
 
 .gradient2 {
-  //@include linear-gradient(to bottom, $color-gradient2, $color-gradient1);
-  //@include animation(fadeInOut 25s ease);
-  //@include animation-fill-mode(forwards);
-  //@include animation-iteration-count(infinite);
+  @include linear-gradient(to bottom, $color-gradient2, $color-gradient1);
+  @include animation(fadeInOut 25s ease);
+  @include animation-fill-mode(forwards);
+  @include animation-iteration-count(infinite);
 }
 
 #svg-container {
@@ -97,7 +97,7 @@
   max-width: 500px;
   width: 100%;
   margin: 0 auto;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
   overflow:auto;
   .section {
     margin-bottom: 25px;

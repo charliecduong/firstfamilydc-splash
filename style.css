@@ -131,7 +131,30 @@ input {
 .gradient1 {
   background-color: #615782;
   background-image: -webkit-linear-gradient(top, #615782, #19508d);
-  background-image: linear-gradient(to bottom,#615782, #19508d); }
+  background-image: linear-gradient(to bottom,#615782, #19508d);
+  -webkit-animation: fadeOutIn 25s ease;
+  -moz-animation: fadeOutIn 25s ease;
+  animation: fadeOutIn 25s ease;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-iteration-count: infinite; }
+
+.gradient2 {
+  background-color: #19508d;
+  background-image: -webkit-linear-gradient(top, #19508d, #615782);
+  background-image: linear-gradient(to bottom,#19508d, #615782);
+  -webkit-animation: fadeInOut 25s ease;
+  -moz-animation: fadeInOut 25s ease;
+  animation: fadeInOut 25s ease;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-iteration-count: infinite; }
 
 #svg-container .svg-wrapper {
   display: block;
@@ -179,7 +202,7 @@ input {
   max-width: 500px;
   width: 100%;
   margin: 0 auto;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
   overflow: auto; }
   #input-container .section {
     margin-bottom: 25px; }
