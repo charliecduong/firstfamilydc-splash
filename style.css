@@ -102,7 +102,8 @@ input {
     margin-bottom: 25px; }
   #main .header {
     width: 100%;
-    padding-top: 50px; }
+    padding-top: 50px;
+    margin-bottom: 100px; }
     #main .header .logo {
       width: 100%;
       max-width: 150px;

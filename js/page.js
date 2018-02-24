@@ -6,3 +6,11 @@ $(function(){
          $('#submit-button').removeClass('on')
   });
 });
+
+$(function(){
+  window.sr = ScrollReveal();
+  sr.reveal('#content');
+  sr.reveal('#input-container');
+  sr.reveal('.quote');
+  sr.reveal('#footer');
+});
