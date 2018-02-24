@@ -207,6 +207,10 @@ input {
   overflow: auto; }
   #input-container .section {
     margin-bottom: 25px; }
+  #input-container .rsvp-closed {
+    text-align: center;
+    color: red;
+    margin-bottom: 100px; }
   #input-container #mc_embed_signup {
     text-align: center;
     margin-bottom: 100px; }
