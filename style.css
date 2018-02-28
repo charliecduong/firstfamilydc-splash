@@ -215,10 +215,6 @@ input {
   @media screen and (max-width: 320px) {
     #input-container {
       padding-top: 325px; } }
-  #input-container .rsvp-closed {
-    text-align: center;
-    color: red;
-    margin-bottom: 100px; }
   #input-container #mc_embed_signup {
     text-align: center;
     margin-bottom: 100px; }
