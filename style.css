@@ -96,14 +96,12 @@ input {
     margin: 0 0 1em 0; } }
 #main {
   position: relative;
-  display: block;
-  margin-bottom: 100px; }
+  display: block; }
   #main .section {
     margin-bottom: 25px; }
   #main .header {
     width: 100%;
-    padding-top: 50px;
-    margin-bottom: 100px; }
+    padding-top: 50px; }
     #main .header .logo {
       width: 100%;
       max-width: 150px;
@@ -130,9 +128,9 @@ input {
   left: 0px; }
 
 .gradient1 {
-  background-color: #615782;
-  background-image: -webkit-linear-gradient(top, #615782, #19508d);
-  background-image: linear-gradient(to bottom,#615782, #19508d);
+  background-color: #f3796a;
+  background-image: -webkit-linear-gradient(top, #f3796a, #3F8F73);
+  background-image: linear-gradient(to bottom,#f3796a, #3F8F73);
   -webkit-animation: fadeOutIn 25s ease;
   -moz-animation: fadeOutIn 25s ease;
   animation: fadeOutIn 25s ease;
@@ -144,9 +142,9 @@ input {
   animation-iteration-count: infinite; }
 
 .gradient2 {
-  background-color: #19508d;
-  background-image: -webkit-linear-gradient(top, #19508d, #615782);
-  background-image: linear-gradient(to bottom,#19508d, #615782);
+  background-color: #3A9FB3;
+  background-image: -webkit-linear-gradient(top, #3A9FB3, #3F8F73);
+  background-image: linear-gradient(to bottom,#3A9FB3, #3F8F73);
   -webkit-animation: fadeInOut 25s ease;
   -moz-animation: fadeInOut 25s ease;
   animation: fadeInOut 25s ease;
@@ -203,10 +201,20 @@ input {
   max-width: 500px;
   width: 100%;
   margin: 0 auto;
+  padding-top: 390px;
   padding-bottom: 20px;
   overflow: auto; }
+  #input-container .countdown-container {
+    margin-bottom: 100px;
+    text-align: center; }
+    #input-container .countdown-container .title {
+      font-size: 700;
+      font-style: italic; }
   #input-container .section {
     margin-bottom: 25px; }
+  @media screen and (max-width: 320px) {
+    #input-container {
+      padding-top: 325px; } }
   #input-container .rsvp-closed {
     text-align: center;
     color: red;
