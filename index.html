@@ -30,7 +30,11 @@
 		<div class="background gradient2"></div>
 		<div id="main">
 			<div class="video-container">
-				<video id="story" autoplay loop muted>
+				<video id="story" class="desktop-only" autoplay loop muted>
+					<source src="images/story-hnw.mp4" type="video/mp4">
+					Your browser does not support the video tag.
+				</video>
+				<video id="story" class="mobile-only" controls>
 					<source src="images/story-hnw.mp4" type="video/mp4">
 					Your browser does not support the video tag.
 				</video>

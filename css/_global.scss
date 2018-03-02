@@ -116,6 +116,14 @@ input {
   }
 }
 
+.mobile-only {
+  display: none;
+}
+
+.desktop-only{
+  display: block;
+}
+
 @media screen and (max-width: $mobile-breakpoint) {
   html, body {
     font-size: 20px;
@@ -131,6 +139,12 @@ input {
   }
   p {
     margin: 0 0 1em 0;
+  }
+  .mobile-only {
+    display: block;
+  }
+  .desktop-only {
+    display: none;
   }
 }
 @media screen and (max-width: 320px) {
