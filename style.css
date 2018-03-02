@@ -34,6 +34,7 @@ h3 {
   font-size: 2em; }
 
 a {
+  margin: 0 0 1em 0;
   text-decoration: none;
   color: #000;
   font-weight: 700;
@@ -44,6 +45,22 @@ a {
   transition: .5s; }
   a:hover {
     color: white; }
+
+button,
+.button {
+  padding: 10px 15px;
+  border: 2px solid #000;
+  color: #000;
+  cursor: pointer;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s; }
+  button:hover,
+  .button:hover {
+    background: #000;
+    color: #fff; }
 
 input {
   background: transparent;
@@ -97,6 +114,18 @@ input {
 #main {
   position: relative;
   display: block; }
+  #main .video-container #story {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    padding-bottom: 25px; }
+  #main .video-container .video-elements {
+    text-align: center; }
+    #main .video-container .video-elements .title {
+      font-size: 700;
+      font-style: italic; }
   #main .section {
     margin-bottom: 25px; }
   #main .header {
@@ -201,7 +230,7 @@ input {
   max-width: 500px;
   width: 100%;
   margin: 0 auto;
-  padding-top: 390px;
+  padding-top: 150px;
   padding-bottom: 20px;
   overflow: auto; }
   #input-container .countdown-container {
