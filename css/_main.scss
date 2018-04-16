@@ -7,6 +7,8 @@
   //height: 92vh;
   //margin: 50px 0;
   //margin-bottom: 100px;
+  background: #ffffff  url(images/bg.jpg) no-repeat;
+  background-size: cover;
   .video-container {
     #story {
       position: relative;
@@ -24,9 +26,6 @@
       }
     }
   }
-  .section {
-    margin-bottom: 25px;
-  }
   .header {
     width: 100%;
     padding-top: 50px;
@@ -35,6 +34,30 @@
       width: 100%;
       max-width: 150px;
       margin: 0 auto;
+    }
+  }
+  .flower {
+    display: block;
+    position: relative;
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px 0;
+    #date {
+      h1 {
+        font-family: $font-headline;
+        text-align: center;
+        padding-bottom: 25px;
+        @media screen and (max-width: $mobile-breakpoint) {
+          font-size: 2em;
+        }
+      }
+    }
+    .flower-inner {
+      img {
+        width: 100%;
+        max-width: 500px;
+      }
     }
   }
   .flyer {
@@ -115,8 +138,7 @@
   max-width: 500px;
   width: 100%;
   margin: 0 auto;
-  padding-top: 450px;
-  padding-bottom: 20px;
+  padding: 20px 0;
   overflow:auto;
   .countdown-container {
     margin-bottom: 100px;
@@ -126,14 +148,11 @@
       font-style: italic;
     }
   }
+  .title {
+    font-family: $font-headline;
+  }
   .mix {
     margin-bottom: 100px;
-  }
-  .section {
-    margin-bottom: 25px;
-  }
-  @media screen and (max-width: 320px) {
-    padding-top: 325px;
   }
   #mc_embed_signup {
     text-align: center;
