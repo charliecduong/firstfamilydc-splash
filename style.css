@@ -96,6 +96,12 @@ input {
       background: #000;
       color: #fff; }
 
+.mobile-only {
+  display: none; }
+
+.desktop-only {
+  display: block; }
+
 @media screen and (max-width: 767px) {
   html, body {
     font-size: 20px; }
@@ -110,7 +116,13 @@ input {
     font-size: 1.5em; }
 
   p {
-    margin: 0 0 1em 0; } }
+    margin: 0 0 1em 0; }
+
+  .mobile-only {
+    display: block; }
+
+  .desktop-only {
+    display: none; } }
 #main {
   position: relative;
   display: block; }
@@ -230,7 +242,7 @@ input {
   max-width: 500px;
   width: 100%;
   margin: 0 auto;
-  padding-top: 150px;
+  padding-top: 450px;
   padding-bottom: 20px;
   overflow: auto; }
   #input-container .countdown-container {
@@ -239,6 +251,8 @@ input {
     #input-container .countdown-container .title {
       font-size: 700;
       font-style: italic; }
+  #input-container .mix {
+    margin-bottom: 100px; }
   #input-container .section {
     margin-bottom: 25px; }
   @media screen and (max-width: 320px) {
