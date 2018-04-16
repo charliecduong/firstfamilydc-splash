@@ -125,7 +125,9 @@ input {
     display: none; } }
 #main {
   position: relative;
-  display: block; }
+  display: block;
+  background: #ffffff url(images/bg.jpg) no-repeat;
+  background-size: cover; }
   #main .video-container #story {
     position: relative;
     top: 0;
@@ -138,8 +140,6 @@ input {
     #main .video-container .video-elements .title {
       font-size: 700;
       font-style: italic; }
-  #main .section {
-    margin-bottom: 25px; }
   #main .header {
     width: 100%;
     padding-top: 50px; }
@@ -147,6 +147,23 @@ input {
       width: 100%;
       max-width: 150px;
       margin: 0 auto; }
+  #main .flower {
+    display: block;
+    position: relative;
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px 0; }
+    #main .flower #date h1 {
+      font-family: "Coda Caption", Helvetica, Arial, Sans-Serif;
+      text-align: center;
+      padding-bottom: 25px; }
+      @media screen and (max-width: 767px) {
+        #main .flower #date h1 {
+          font-size: 2em; } }
+    #main .flower .flower-inner img {
+      width: 100%;
+      max-width: 500px; }
   #main .flyer {
     width: 100%;
     margin-bottom: 25px; }
@@ -242,8 +259,7 @@ input {
   max-width: 500px;
   width: 100%;
   margin: 0 auto;
-  padding-top: 450px;
-  padding-bottom: 20px;
+  padding: 20px 0;
   overflow: auto; }
   #input-container .countdown-container {
     margin-bottom: 100px;
@@ -251,13 +267,10 @@ input {
     #input-container .countdown-container .title {
       font-size: 700;
       font-style: italic; }
+  #input-container .title {
+    font-family: "Coda Caption", Helvetica, Arial, Sans-Serif; }
   #input-container .mix {
     margin-bottom: 100px; }
-  #input-container .section {
-    margin-bottom: 25px; }
-  @media screen and (max-width: 320px) {
-    #input-container {
-      padding-top: 325px; } }
   #input-container #mc_embed_signup {
     text-align: center;
     margin-bottom: 100px; }
