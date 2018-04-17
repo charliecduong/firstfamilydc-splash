@@ -126,7 +126,7 @@ input {
 #main {
   position: relative;
   display: block;
-  background: #ffffff url(images/background.jpg) no-repeat;
+  background: #EFB156 url(images/background.jpg) no-repeat;
   background-size: cover; }
   #main .video-container #story {
     position: relative;
