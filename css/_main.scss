@@ -42,7 +42,16 @@
       width: 100%;
       max-width: 150px;
       margin: 0 auto 25px;
-
+      img {
+        @media screen and (min-width: $mobile-breakpoint) {
+          -webkit-transition: -webkit-transform .8s ease-in-out;
+          transition: transform .8s ease-in-out;
+          &:hover {
+            -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+          }
+        }  
+      }
     }
     .hero {
       width: 100%;
@@ -71,14 +80,6 @@
       img {
         width: 100%;
         max-width: 500px;
-        @media screen and (min-width: $mobile-breakpoint) {
-          -webkit-transition: -webkit-transform .8s ease-in-out;
-          transition: transform .8s ease-in-out;
-          &:hover {
-            -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-          }
-        }
       }
     }
   }

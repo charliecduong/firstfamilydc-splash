@@ -161,6 +161,13 @@ input {
       width: 100%;
       max-width: 150px;
       margin: 0 auto 25px; }
+      @media screen and (min-width: 767px) {
+        #main .header .logo img {
+          -webkit-transition: -webkit-transform .8s ease-in-out;
+          transition: transform .8s ease-in-out; }
+          #main .header .logo img:hover {
+            -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
     #main .header .hero {
       width: 100%;
       max-width: 767px;
@@ -182,13 +189,6 @@ input {
     #main .flower .flower-inner img {
       width: 100%;
       max-width: 500px; }
-      @media screen and (min-width: 767px) {
-        #main .flower .flower-inner img {
-          -webkit-transition: -webkit-transform .8s ease-in-out;
-          transition: transform .8s ease-in-out; }
-          #main .flower .flower-inner img:hover {
-            -webkit-transform: rotate(360deg);
-            transform: rotate(360deg); } }
   #main .flyer {
     width: 100%;
     margin-bottom: 25px; }
