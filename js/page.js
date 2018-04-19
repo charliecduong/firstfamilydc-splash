@@ -179,8 +179,8 @@ $(function(){
 
 $(function(){
   window.sr = ScrollReveal();
-  sr.reveal('#content');
-  sr.reveal('#input-container');
-  sr.reveal('.quote');
-  sr.reveal('#footer');
+  //sr.reveal('#content');
+ 	//sr.reveal('#input-container');
+  //sr.reveal('#bloom-image');
+  //sr.reveal('#footer');
 });
