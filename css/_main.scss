@@ -50,14 +50,16 @@
             -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
           }
-        }  
+        }
       }
     }
     .hero {
       width: 100%;
       max-width: 767px;
       margin: 0 auto;
+      padding-bottom: 75px;
     }
+
   }
   .flower {
     display: block;

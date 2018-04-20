@@ -171,7 +171,8 @@ input {
     #main .header .hero {
       width: 100%;
       max-width: 767px;
-      margin: 0 auto; }
+      margin: 0 auto;
+      padding-bottom: 75px; }
   #main .flower {
     display: block;
     position: relative;
