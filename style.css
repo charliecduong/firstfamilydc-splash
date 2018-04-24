@@ -159,8 +159,8 @@ input {
     padding: 50px 0; }
     #main .header .logo {
       width: 100%;
-      max-width: 150px;
-      margin: 0 auto 100px; }
+      max-width: 250px;
+      margin: 0 auto 25px; }
       @media screen and (min-width: 767px) {
         #main .header .logo img {
           -webkit-transition: -webkit-transform .8s ease-in-out;
@@ -302,6 +302,10 @@ input {
       #input-container #mc_embed_signup #submit-button.on {
         opacity: 1;
         animation: fadeIn 200ms linear; }
+
+.mix {
+  max-width: 500px;
+  margin: 0 auto; }
 
 #content {
   width: 100% !important; }
