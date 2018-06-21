@@ -6,7 +6,8 @@ html, body {
   line-height: 1.6;
   color: #000;
   background-color: #fff;
-  font-family: "Poppins", Helvetica, Arial, Sans-Serif; }
+  font-family: Helvetica, Arial, Sans-Serif;
+  font-weight: bold; }
 
 * {
   -webkit-box-sizing: border-box;
@@ -21,9 +22,7 @@ h1,
 h2,
 h3,
 h4 {
-  line-height: 1.25;
-  letter-spacing: 3px;
-  font-weight: normal; }
+  line-height: 1.25; }
 
 h1 {
   font-size: 4em; }
@@ -73,9 +72,10 @@ input {
   background: transparent;
   margin-bottom: 10px;
   font-size: 18px;
-  font-family: "Poppins", Helvetica, Arial, Sans-Serif;
+  font-family: Helvetica, Arial, Sans-Serif;
   border-radius: 0;
-  -webkit-appearance: none; }
+  -webkit-appearance: none;
+  font-weight: bold; }
   input:focus {
     outline: none; }
   input[type=email], input[type=text] {
@@ -133,8 +133,20 @@ input {
 #main {
   position: relative;
   display: block;
-  background: #EFB156 url(images/background.jpg) no-repeat;
+  background: #E3E77E url(images/background-1a.png) no-repeat;
   background-size: cover; }
+  #main .marquee {
+    position: relative;
+    width: 100vw;
+    max-width: 100%;
+    height: 40px;
+    overflow-x: hidden;
+    font-size: 30px; }
+  #main .track {
+    position: absolute;
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee 35s linear infinite; }
   #main .section {
     display: block;
     position: relative;
@@ -159,15 +171,18 @@ input {
     padding: 50px 0; }
     #main .header .logo {
       width: 100%;
-      max-width: 250px;
-      margin: 0 auto 25px; }
-      @media screen and (min-width: 767px) {
-        #main .header .logo img {
+      max-width: 400px;
+      margin: 0 auto 25px;
+      /*img {
+        @media screen and (min-width: $mobile-breakpoint) {
           -webkit-transition: -webkit-transform .8s ease-in-out;
-          transition: transform .8s ease-in-out; }
-          #main .header .logo img:hover {
+          transition: transform .8s ease-in-out;
+          &:hover {
             -webkit-transform: rotate(360deg);
-            transform: rotate(360deg); } }
+            transform: rotate(360deg);
+          }
+        }
+      }*/ }
     #main .header .hero {
       width: 100%;
       max-width: 767px;
@@ -315,9 +330,18 @@ input {
   #content .row {
     display: flex;
     margin-bottom: 50px; }
+  #content .row-2 {
+    margin-bottom: 50px; }
   #content .column {
     text-align: center;
     flex: 50%; }
+  #content .column-2 {
+    text-align: center;
+    flex: 100%; }
+    #content .column-2 .dj {
+      max-width: 450px; }
+    #content .column-2:first-child {
+      margin-bottom: 50px; }
   @media screen and (max-width: 767px) {
     #content .row {
       display: block; }
@@ -333,6 +357,17 @@ input {
   font-size: 8px;
   position: relative;
   text-align: center; }
+  #footer .logo {
+    width: 100%;
+    max-width: 100px;
+    margin: 0 auto 25px; }
+    @media screen and (min-width: 767px) {
+      #footer .logo img {
+        -webkit-transition: -webkit-transform .8s ease-in-out;
+        transition: transform .8s ease-in-out; }
+        #footer .logo img:hover {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg); } }
   #footer .quote {
     font-size: 18px;
     font-family: "Libre Baskerville", Georgia, Serif;
@@ -355,6 +390,11 @@ input {
 @media screen and (max-width: 767px) {
   .wrap {
     margin: 0 15px; } }
+@keyframes marquee {
+  from {
+    transform: translateX(0); }
+  to {
+    transform: translateX(-50%); } }
 @-webkit-keyframes fadeInOut {
   0% {
     opacity: 0; }
