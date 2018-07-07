@@ -133,7 +133,7 @@ input {
 #main {
   position: relative;
   display: block;
-  background: #E3E77E url(images/background-1a.png) no-repeat;
+  background: #EFB156 url(images/background-cloud.jpg) no-repeat;
   background-size: cover; }
   #main .marquee {
     position: relative;
@@ -171,7 +171,7 @@ input {
     padding: 50px 0; }
     #main .header .logo {
       width: 100%;
-      max-width: 400px;
+      max-width: 250px;
       margin: 0 auto 25px;
       /*img {
         @media screen and (min-width: $mobile-breakpoint) {
