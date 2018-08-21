@@ -133,7 +133,7 @@ input {
 #main {
   position: relative;
   display: block;
-  background: #000 url(images/ds2.jpg) no-repeat;
+  background: #000 url(images/background-cloud.jpg) no-repeat;
   background-size: cover; }
   #main .marquee {
     position: relative;
@@ -182,8 +182,8 @@ input {
     #main .header .logo {
       display: block;
       width: 100%;
-      max-width: 500px;
-      margin: 0 auto 100px;
+      max-width: 200px;
+      margin: 0 auto;
       /*img {
         @media screen and (min-width: $mobile-breakpoint) {
           -webkit-transition: -webkit-transform .8s ease-in-out;
@@ -321,7 +321,7 @@ input {
 #input-container {
   max-width: 500px;
   padding: 75px 0 20px !important;
-  color: white; }
+  color: #000; }
   #input-container .countdown-container {
     margin-bottom: 100px;
     text-align: center; }
@@ -337,19 +337,19 @@ input {
     margin-bottom: 50px; }
     #input-container #mc_embed_signup .mc-field-group input {
       display: block;
-      color: white;
-      border-bottom: 2px white solid; }
+      color: #000;
+      border-bottom: 2px #000 solid; }
       #input-container #mc_embed_signup .mc-field-group input::placeholder {
-        color: white; }
+        color: #000; }
     #input-container #mc_embed_signup #submit-button {
       opacity: 0;
-      color: white;
-      border-color: white;
+      color: #000;
+      border-color: #000;
       border-radius: 10px; }
       #input-container #mc_embed_signup #submit-button:hover {
         background: transparent;
-        border-color: #F5E34D;
-        color: #F5E34D; }
+        border-color: white;
+        color: white; }
       #input-container #mc_embed_signup #submit-button.on {
         opacity: 1;
         animation: fadeIn 200ms linear; }
@@ -416,14 +416,14 @@ input {
     margin: 0 auto 50px; }
   #footer #social a {
     font-size: 24px;
-    color: white;
+    color: #000;
     padding: 0 5px; }
     #footer #social a:hover {
-      color: #F5E34D; }
+      color: white; }
   #footer p {
     padding: 10px 0;
     margin: 0;
-    color: white; }
+    color: #000; }
 
 @media screen and (max-width: 767px) {
   .wrap {
