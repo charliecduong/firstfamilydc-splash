@@ -7,7 +7,7 @@
   //height: 92vh;
   //margin: 50px 0;
   //margin-bottom: 100px;
-  background: #000 url(images/background-cloud.jpg) no-repeat;
+  background: #000 url(images/sunset-bg.png) no-repeat 100%;
   background-size: cover;
   .marquee {
   position: relative;
@@ -69,7 +69,7 @@
     .logo {
       display: block;
       width: 100%;
-      max-width: 200px;
+      max-width: 500px;
       margin: 0 auto;
       img {
         margin-bottom: 50px;
@@ -204,7 +204,7 @@
 #input-container {
   max-width: 500px;
       padding: 75px 0 20px !important;
-      color: #000;
+      color: white;
   .countdown-container {
     margin-bottom: 100px;
     text-align: center;
@@ -224,17 +224,17 @@
     .mc-field-group {
       input {
         display: block;
-        color: #000;
-        border-bottom: 2px #000 solid;
+        color: white;
+        border-bottom: 2px white solid;
         &::placeholder {
-          color: #000;
+          color: white;
         }
       }
     }
     #submit-button {
       opacity: 0;
-      color: #000;
-      border-color: #000;
+      color: white;
+      border-color: white;
       border-radius: 10px;
       &:hover {
         background: transparent;
@@ -333,7 +333,7 @@
   #social {
     a {
       font-size: 24px;
-      color: #000;
+      color: white;
       padding: 0 5px;
       &:hover {
         color: white;
@@ -343,7 +343,7 @@
   p {
     padding: 10px 0;
     margin: 0;
-    color: #000;
+    color: white;
   }
 }
 @media screen and (max-width: $mobile-breakpoint) {
