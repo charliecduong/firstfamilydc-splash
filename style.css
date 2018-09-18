@@ -133,7 +133,7 @@ input {
 #main {
   position: relative;
   display: block;
-  background: #000 url(images/sunset-bg.png) no-repeat 100%;
+  background: #000 url(images/background-cloud.jpg) no-repeat 100%;
   background-size: cover; }
   #main .marquee {
     position: relative;
@@ -182,7 +182,7 @@ input {
     #main .header .logo {
       display: block;
       width: 100%;
-      max-width: 500px;
+      max-width: 250px;
       margin: 0 auto;
       /*img {
         @media screen and (min-width: $mobile-breakpoint) {
