@@ -7,7 +7,7 @@
   //height: 92vh;
   //margin: 50px 0;
   //margin-bottom: 100px;
-  background: #000 url(images/background-cloud.jpg) no-repeat 100%;
+  background: #000 url() no-repeat 100%;
   background-size: cover;
   .marquee {
   position: relative;
@@ -293,9 +293,24 @@
 }
 
 #bloom-image {
-  max-width: 300px !important;
+  max-width: 800px !important;
   img {
     width: 100%;
+  }
+  a.button {
+    display: block;
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    background: #F5E34D;
+    border-color: #F5E34D;
+    border-radius: 10px;
+    text-align: center;
+    &:hover {
+      background: transparent;
+      border-color: #F5E34D;
+      color: #F5E34D;
+    }
   }
 }
 
