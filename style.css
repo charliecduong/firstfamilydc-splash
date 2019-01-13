@@ -6,7 +6,8 @@ html, body {
   line-height: 1.6;
   color: #000;
   background-color: #fff;
-  font-family: "Poppins", Helvetica, Arial, Sans-Serif; }
+  font-family: Helvetica, Arial, Sans-Serif;
+  font-weight: bold; }
 
 * {
   -webkit-box-sizing: border-box;
@@ -19,10 +20,9 @@ h1, h2, h3, h4, h5, h6 {
 
 h1,
 h2,
-h3 {
-  line-height: 1.25;
-  letter-spacing: 3px;
-  font-weight: normal; }
+h3,
+h4 {
+  line-height: 1.25; }
 
 h1 {
   font-size: 4em; }
@@ -32,6 +32,9 @@ h2 {
 
 h3 {
   font-size: 2em; }
+
+h4 {
+  font-size: 1.5em; }
 
 a {
   margin: 0 0 1em 0;
@@ -45,6 +48,9 @@ a {
   transition: .5s; }
   a:hover {
     color: white; }
+
+p {
+  margin: 0 0 1em 0; }
 
 button,
 .button {
@@ -66,9 +72,10 @@ input {
   background: transparent;
   margin-bottom: 10px;
   font-size: 18px;
-  font-family: "Poppins", Helvetica, Arial, Sans-Serif;
+  font-family: Helvetica, Arial, Sans-Serif;
   border-radius: 0;
-  -webkit-appearance: none; }
+  -webkit-appearance: none;
+  font-weight: bold; }
   input:focus {
     outline: none; }
   input[type=email], input[type=text] {
@@ -125,7 +132,38 @@ input {
     display: none; } }
 #main {
   position: relative;
-  display: block; }
+  display: block;
+  background: #000 url() no-repeat 100%;
+  background-size: cover; }
+  #main .marquee {
+    position: relative;
+    width: 100vw;
+    max-width: 100%;
+    height: 40px;
+    overflow-x: hidden;
+    font-size: 30px; }
+  #main .tab .tab-inner {
+    text-align: center;
+    width: 100%;
+    max-width: 230px;
+    height: auto;
+    margin: 0 auto;
+    background: #F5E34D;
+    border-radius: 0px 0px 10px 10px; }
+    #main .tab .tab-inner p {
+      padding: 10px; }
+  #main .track {
+    position: absolute;
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee 35s linear infinite; }
+  #main .section {
+    display: block;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 0;
+    overflow: auto; }
   #main .video-container #story {
     position: relative;
     top: 0;
@@ -138,15 +176,59 @@ input {
     #main .video-container .video-elements .title {
       font-size: 700;
       font-style: italic; }
-  #main .section {
-    margin-bottom: 25px; }
   #main .header {
     width: 100%;
-    padding-top: 50px; }
+    padding: 50px 0; }
     #main .header .logo {
+      display: block;
       width: 100%;
-      max-width: 150px;
-      margin: 0 auto; }
+      max-width: 250px;
+      margin: 0 auto;
+      /*img {
+        @media screen and (min-width: $mobile-breakpoint) {
+          -webkit-transition: -webkit-transform .8s ease-in-out;
+          transition: transform .8s ease-in-out;
+          &:hover {
+            -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+          }
+        }
+      }*/ }
+      #main .header .logo img {
+        margin-bottom: 50px; }
+      #main .header .logo a.button {
+        display: block;
+        width: 100%;
+        background: #F5E34D;
+        border-color: #F5E34D;
+        border-radius: 10px;
+        text-align: center; }
+        #main .header .logo a.button:hover {
+          background: transparent;
+          border-color: #F5E34D;
+          color: #F5E34D; }
+    #main .header .hero {
+      width: 100%;
+      max-width: 767px;
+      margin: 0 auto;
+      padding-bottom: 75px; }
+  #main .flower {
+    display: block;
+    position: relative;
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px 0; }
+    #main .flower #date h1 {
+      font-family: "Coda Caption", Helvetica, Arial, Sans-Serif;
+      text-align: center;
+      padding-bottom: 25px; }
+      @media screen and (max-width: 767px) {
+        #main .flower #date h1 {
+          font-size: 2em; } }
+    #main .flower .flower-inner img {
+      width: 100%;
+      max-width: 500px; }
   #main .flyer {
     width: 100%;
     margin-bottom: 25px; }
@@ -237,58 +319,134 @@ input {
   animation-fill-mode: forwards; }
 
 #input-container {
-  display: block;
-  position: relative;
   max-width: 500px;
-  width: 100%;
-  margin: 0 auto;
-  padding-top: 450px;
-  padding-bottom: 20px;
-  overflow: auto; }
+  padding: 75px 0 20px !important;
+  color: white; }
   #input-container .countdown-container {
     margin-bottom: 100px;
     text-align: center; }
     #input-container .countdown-container .title {
       font-size: 700;
       font-style: italic; }
-  #input-container .mix {
-    margin-bottom: 100px; }
-  #input-container .section {
-    margin-bottom: 25px; }
-  @media screen and (max-width: 320px) {
-    #input-container {
-      padding-top: 325px; } }
+  #input-container .title {
+    font-family: "Coda Caption", Helvetica, Arial, Sans-Serif;
+    text-align: center;
+    color: red; }
   #input-container #mc_embed_signup {
     text-align: center;
-    margin-bottom: 100px; }
+    margin-bottom: 50px; }
     #input-container #mc_embed_signup .mc-field-group input {
-      display: block; }
+      display: block;
+      color: white;
+      border-bottom: 2px white solid; }
+      #input-container #mc_embed_signup .mc-field-group input::placeholder {
+        color: white; }
     #input-container #mc_embed_signup #submit-button {
-      opacity: 0; }
+      opacity: 0;
+      color: white;
+      border-color: white;
+      border-radius: 10px; }
+      #input-container #mc_embed_signup #submit-button:hover {
+        background: transparent;
+        border-color: white;
+        color: white; }
       #input-container #mc_embed_signup #submit-button.on {
         opacity: 1;
         animation: fadeIn 200ms linear; }
-  #input-container .quote {
+
+.mix {
+  padding: 80px 0 0;
+  max-width: 500px;
+  margin: 0 auto; }
+
+#content {
+  width: 100% !important; }
+  #content h3 {
+    font-family: "Coda Caption", Helvetica, Arial, Sans-Serif;
+    font-size: 1.25em; }
+  #content .row {
+    display: flex;
+    margin-bottom: 50px; }
+  #content .row-2 {
+    margin-bottom: 50px; }
+  #content .column {
+    text-align: center;
+    flex: 50%; }
+  #content .column-2 {
+    text-align: center;
+    flex: 100%; }
+    #content .column-2 .dj {
+      max-width: 450px; }
+    #content .column-2:first-child {
+      margin-bottom: 50px; }
+  @media screen and (max-width: 767px) {
+    #content .row {
+      display: block; }
+    #content .column {
+      margin-bottom: 50px; } }
+
+#bloom-image {
+  max-width: 800px !important; }
+  #bloom-image img {
+    width: 100%; }
+  #bloom-image a.button {
+    display: block;
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    background: #F5E34D;
+    border-color: #F5E34D;
+    border-radius: 10px;
+    text-align: center; }
+    #bloom-image a.button:hover {
+      background: transparent;
+      border-color: #F5E34D;
+      color: #F5E34D; }
+
+#footer {
+  font-size: 8px;
+  position: relative;
+  text-align: center; }
+  #footer .logo {
+    width: 100%;
+    max-width: 100px;
+    margin: 0 auto 25px; }
+    @media screen and (min-width: 767px) {
+      #footer .logo img {
+        -webkit-transition: -webkit-transform .8s ease-in-out;
+        transition: transform .8s ease-in-out;
+        stroke: white; }
+        #footer .logo img:hover {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg); } }
+  #footer .quote {
+    font-size: 18px;
     font-family: "Libre Baskerville", Georgia, Serif;
     font-style: italic;
-    text-align: center; }
-  #input-container #footer {
-    font-size: 8px;
-    position: relative;
+    font-weight: bold;
     text-align: center;
-    margin: 40px 0 20px; }
-    #input-container #footer #social a {
-      font-size: 24px;
-      color: #000;
-      padding: 0 5px; }
-      #input-container #footer #social a:hover {
-        color: #fff; }
-    #input-container #footer p {
-      margin: 10px 0; }
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto 50px; }
+  #footer #social a {
+    font-size: 24px;
+    color: white;
+    padding: 0 5px; }
+    #footer #social a:hover {
+      color: white; }
+  #footer p {
+    padding: 10px 0;
+    margin: 0;
+    color: white; }
 
 @media screen and (max-width: 767px) {
   .wrap {
     margin: 0 15px; } }
+@keyframes marquee {
+  from {
+    transform: translateX(0); }
+  to {
+    transform: translateX(-50%); } }
 @-webkit-keyframes fadeInOut {
   0% {
     opacity: 0; }
