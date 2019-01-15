@@ -599,7 +599,8 @@ body, html {
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%); }
+  transform: translate(-50%, -50%);
+  color: white; }
   .title .community-details ul {
     list-style: none;
     padding: 15px 0; }
@@ -662,7 +663,10 @@ body, html {
   /* slide over group 7 */ }
 
 #group7 .parallax__layer--base {
-  background: url("images/ds2.jpg");
+  background: url("images/gradient_2.jpg");
   background-size: cover; }
+
+.community-dropdown {
+  color: white; }
 
 /*# sourceMappingURL=style.css.map */
