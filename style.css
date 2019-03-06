@@ -136,7 +136,7 @@ input {
 #main {
   position: relative;
   display: block;
-  background: #013313 url(images/lucky-strike-dragon.svg) no-repeat 100%;
+  background: #013313 url(images/background-cloud.jpg) no-repeat 100%;
   background-size: cover; }
   #main .marquee {
     position: relative;
@@ -185,7 +185,7 @@ input {
     #main .header .logo {
       display: block;
       width: 100%;
-      max-width: 800px;
+      max-width: 200px;
       margin: 0 auto;
       /*img {
         @media screen and (min-width: $mobile-breakpoint) {
