@@ -136,7 +136,7 @@ input {
 #main {
   position: relative;
   display: block;
-  background: #FCD271 url() no-repeat 100%;
+  background: #FCD271 url(images/background-cloud.jpg) no-repeat 100%;
   background-size: cover; }
   #main .marquee {
     position: relative;
