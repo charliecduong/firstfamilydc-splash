@@ -42,7 +42,7 @@ h4 {
 a {
   margin: 0 0 1em 0;
   text-decoration: none;
-  color: #000;
+  color: #fff;
   font-weight: 700;
   -o-transition: .5s;
   -ms-transition: .5s;
@@ -68,7 +68,7 @@ button,
   transition: .5s; }
   button:hover,
   .button:hover {
-    background: #000;
+    background: transparent;
     color: #fff; }
 
 input {
@@ -136,7 +136,7 @@ input {
 #main {
   position: relative;
   display: block;
-  background: #FCD271 url(images/background-cloud.jpg) no-repeat 100%;
+  background: #161616;
   background-size: cover; }
   #main .marquee {
     position: relative;
@@ -324,7 +324,7 @@ input {
 #input-container {
   max-width: 500px;
   padding: 75px 0 20px !important;
-  color: #000; }
+  color: #fff; }
   #input-container .countdown-container {
     margin-bottom: 100px;
     text-align: center; }
@@ -340,19 +340,19 @@ input {
     margin-bottom: 50px; }
     #input-container #mc_embed_signup .mc-field-group input {
       display: block;
-      color: #000;
-      border-bottom: 2px #000 solid; }
+      color: #fff;
+      border-bottom: 2px #fff solid; }
       #input-container #mc_embed_signup .mc-field-group input::placeholder {
-        color: #000; }
+        color: #fff; }
     #input-container #mc_embed_signup #submit-button {
       opacity: 0;
-      color: #000;
-      border-color: #000;
+      color: white;
+      border-color: white;
       border-radius: 10px; }
       #input-container #mc_embed_signup #submit-button:hover {
         background: transparent;
-        border-color: white;
-        color: white; }
+        border-color: #F5E34D;
+        color: #F5E34D; }
       #input-container #mc_embed_signup #submit-button.on {
         opacity: 1;
         animation: fadeIn 200ms linear; }
@@ -433,14 +433,14 @@ input {
     margin: 0 auto 50px; }
   #footer #social a {
     font-size: 24px;
-    color: #000;
+    color: #fff;
     padding: 0 5px; }
     #footer #social a:hover {
-      color: white; }
+      color: #F5E34D; }
   #footer p {
     padding: 10px 0;
     margin: 0;
-    color: #000; }
+    color: #fff; }
 
 @media screen and (max-width: 767px) {
   .wrap {
