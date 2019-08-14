@@ -7,7 +7,7 @@
   //height: 92vh;
   //margin: 50px 0;
   //margin-bottom: 100px;
-  background: #000 url(images/giveaway.jpg) no-repeat 100%;
+  background: #FCD271 url(images/background-cloud.jpg) no-repeat 100%;
   background-size: cover;
   .marquee {
   position: relative;
@@ -69,7 +69,7 @@
     .logo {
       display: block;
       width: 100%;
-      max-width: 250px;
+      max-width: 200px;
       margin: 0 auto;
       img {
         margin-bottom: 50px;
@@ -204,7 +204,7 @@
 #input-container {
   max-width: 500px;
       padding: 75px 0 20px !important;
-      color: white;
+      color: #000;
   .countdown-container {
     margin-bottom: 100px;
     text-align: center;
@@ -224,17 +224,17 @@
     .mc-field-group {
       input {
         display: block;
-        color: white;
-        border-bottom: 2px white solid;
+        color: #000;
+        border-bottom: 2px #000 solid;
         &::placeholder {
-          color: white;
+          color: #000;
         }
       }
     }
     #submit-button {
       opacity: 0;
-      color: white;
-      border-color: white;
+      color: #000;
+      border-color: #000;
       border-radius: 10px;
       &:hover {
         background: transparent;
@@ -250,6 +250,7 @@
 }
 
 .mix {
+  padding: 80px 0 0;
   max-width: 500px;
   margin: 0 auto;
 }
@@ -293,9 +294,24 @@
 }
 
 #bloom-image {
-  max-width: 300px !important;
+  max-width: 800px !important;
   img {
     width: 100%;
+  }
+  a.button {
+    display: block;
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    background: #F5E34D;
+    border-color: #F5E34D;
+    border-radius: 10px;
+    text-align: center;
+    &:hover {
+      background: transparent;
+      border-color: #F5E34D;
+      color: #F5E34D;
+    }
   }
 }
 
@@ -333,7 +349,7 @@
   #social {
     a {
       font-size: 24px;
-      color: white;
+      color: #000;
       padding: 0 5px;
       &:hover {
         color: white;
@@ -343,7 +359,7 @@
   p {
     padding: 10px 0;
     margin: 0;
-    color: white;
+    color: #000;
   }
 }
 @media screen and (max-width: $mobile-breakpoint) {

@@ -6,7 +6,7 @@ html, body {
   line-height: 1.6;
   color: #000;
   background-color: #fff;
-  font-family: Helvetica, Arial, Sans-Serif;
+  font-family: "Poppins", Helvetica, Arial, Sans-Serif;
   font-weight: bold; }
 
 * {
@@ -28,10 +28,13 @@ h1 {
   font-size: 4em; }
 
 h2 {
-  font-size: 3em; }
+  font-size: 3em;
+  font-family: "Libre Baskerville", Georgia, Serif;
+  font-weight: bold; }
 
 h3 {
-  font-size: 2em; }
+  font-size: 1.8em;
+  font-family: "Libre Baskerville", Georgia, Serif; }
 
 h4 {
   font-size: 1.5em; }
@@ -72,7 +75,7 @@ input {
   background: transparent;
   margin-bottom: 10px;
   font-size: 18px;
-  font-family: Helvetica, Arial, Sans-Serif;
+  font-family: "Poppins", Helvetica, Arial, Sans-Serif;
   border-radius: 0;
   -webkit-appearance: none;
   font-weight: bold; }
@@ -133,7 +136,7 @@ input {
 #main {
   position: relative;
   display: block;
-  background: #000 url(images/giveaway.jpg) no-repeat 100%;
+  background: #FCD271 url(images/background-cloud.jpg) no-repeat 100%;
   background-size: cover; }
   #main .marquee {
     position: relative;
@@ -182,7 +185,7 @@ input {
     #main .header .logo {
       display: block;
       width: 100%;
-      max-width: 250px;
+      max-width: 200px;
       margin: 0 auto;
       /*img {
         @media screen and (min-width: $mobile-breakpoint) {
@@ -321,7 +324,7 @@ input {
 #input-container {
   max-width: 500px;
   padding: 75px 0 20px !important;
-  color: white; }
+  color: #000; }
   #input-container .countdown-container {
     margin-bottom: 100px;
     text-align: center; }
@@ -337,14 +340,14 @@ input {
     margin-bottom: 50px; }
     #input-container #mc_embed_signup .mc-field-group input {
       display: block;
-      color: white;
-      border-bottom: 2px white solid; }
+      color: #000;
+      border-bottom: 2px #000 solid; }
       #input-container #mc_embed_signup .mc-field-group input::placeholder {
-        color: white; }
+        color: #000; }
     #input-container #mc_embed_signup #submit-button {
       opacity: 0;
-      color: white;
-      border-color: white;
+      color: #000;
+      border-color: #000;
       border-radius: 10px; }
       #input-container #mc_embed_signup #submit-button:hover {
         background: transparent;
@@ -355,6 +358,7 @@ input {
         animation: fadeIn 200ms linear; }
 
 .mix {
+  padding: 80px 0 0;
   max-width: 500px;
   margin: 0 auto; }
 
@@ -385,9 +389,22 @@ input {
       margin-bottom: 50px; } }
 
 #bloom-image {
-  max-width: 300px !important; }
+  max-width: 800px !important; }
   #bloom-image img {
     width: 100%; }
+  #bloom-image a.button {
+    display: block;
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    background: #F5E34D;
+    border-color: #F5E34D;
+    border-radius: 10px;
+    text-align: center; }
+    #bloom-image a.button:hover {
+      background: transparent;
+      border-color: #F5E34D;
+      color: #F5E34D; }
 
 #footer {
   font-size: 8px;
@@ -416,14 +433,14 @@ input {
     margin: 0 auto 50px; }
   #footer #social a {
     font-size: 24px;
-    color: white;
+    color: #000;
     padding: 0 5px; }
     #footer #social a:hover {
       color: white; }
   #footer p {
     padding: 10px 0;
     margin: 0;
-    color: white; }
+    color: #000; }
 
 @media screen and (max-width: 767px) {
   .wrap {
