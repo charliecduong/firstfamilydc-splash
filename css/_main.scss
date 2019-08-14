@@ -7,7 +7,7 @@
   //height: 92vh;
   //margin: 50px 0;
   //margin-bottom: 100px;
-  background: #FCD271 url(images/background-cloud.jpg) no-repeat 100%;
+  background: #161616; //url(images/dsiii-bg.png) no-repeat 50%;
   background-size: cover;
   .marquee {
   position: relative;
@@ -204,7 +204,7 @@
 #input-container {
   max-width: 500px;
       padding: 75px 0 20px !important;
-      color: #000;
+      color: #fff;
   .countdown-container {
     margin-bottom: 100px;
     text-align: center;
@@ -224,22 +224,22 @@
     .mc-field-group {
       input {
         display: block;
-        color: #000;
-        border-bottom: 2px #000 solid;
+        color: #fff;
+        border-bottom: 2px #fff solid;
         &::placeholder {
-          color: #000;
+          color: #fff;
         }
       }
     }
     #submit-button {
       opacity: 0;
-      color: #000;
-      border-color: #000;
+      color: white;
+      border-color: white;
       border-radius: 10px;
       &:hover {
         background: transparent;
-        border-color: white;
-        color: white;
+        border-color: #F5E34D;
+        color: #F5E34D;
       }
       &.on {
         opacity: 1;
@@ -349,17 +349,17 @@
   #social {
     a {
       font-size: 24px;
-      color: #000;
+      color: #fff;
       padding: 0 5px;
       &:hover {
-        color: white;
+        color: #F5E34D;
       }
     }
   }
   p {
     padding: 10px 0;
     margin: 0;
-    color: #000;
+    color: #fff;
   }
 }
 @media screen and (max-width: $mobile-breakpoint) {
