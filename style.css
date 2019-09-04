@@ -136,7 +136,7 @@ input {
 #main {
   position: relative;
   display: block;
-  background: #161616;
+  background: #161616 url(images/gc-bg.png) no-repeat 50%;
   background-size: cover; }
   #main .marquee {
     position: relative;
@@ -185,7 +185,7 @@ input {
     #main .header .logo {
       display: block;
       width: 100%;
-      max-width: 200px;
+      max-width: 500px;
       margin: 0 auto;
       /*img {
         @media screen and (min-width: $mobile-breakpoint) {
@@ -198,7 +198,13 @@ input {
         }
       }*/ }
       #main .header .logo img {
-        margin-bottom: 50px; }
+        margin-bottom: 50px;
+        position: relative;
+        display: block;
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 0 0 50px 0; }
       #main .header .logo a.button {
         display: block;
         width: 100%;
@@ -324,7 +330,7 @@ input {
 #input-container {
   max-width: 500px;
   padding: 75px 0 20px !important;
-  color: #fff; }
+  color: #F7A668; }
   #input-container .countdown-container {
     margin-bottom: 100px;
     text-align: center; }
@@ -340,19 +346,19 @@ input {
     margin-bottom: 50px; }
     #input-container #mc_embed_signup .mc-field-group input {
       display: block;
-      color: #fff;
-      border-bottom: 2px #fff solid; }
+      color: #F7A668;
+      border-bottom: 2px #F7A668 solid; }
       #input-container #mc_embed_signup .mc-field-group input::placeholder {
-        color: #fff; }
+        color: #F7A668; }
     #input-container #mc_embed_signup #submit-button {
       opacity: 0;
-      color: white;
-      border-color: white;
+      color: #F7A668;
+      border-color: #F7A668;
       border-radius: 10px; }
       #input-container #mc_embed_signup #submit-button:hover {
         background: transparent;
-        border-color: #F5E34D;
-        color: #F5E34D; }
+        border-color: white;
+        color: white; }
       #input-container #mc_embed_signup #submit-button.on {
         opacity: 1;
         animation: fadeIn 200ms linear; }
@@ -391,7 +397,8 @@ input {
 #bloom-image {
   max-width: 800px !important; }
   #bloom-image img {
-    width: 100%; }
+    width: 100%;
+    margin: 10px 0; }
   #bloom-image a.button {
     display: block;
     max-width: 300px;
@@ -417,8 +424,7 @@ input {
     @media screen and (min-width: 767px) {
       #footer .logo img {
         -webkit-transition: -webkit-transform .8s ease-in-out;
-        transition: transform .8s ease-in-out;
-        stroke: white; }
+        transition: transform .8s ease-in-out; }
         #footer .logo img:hover {
           -webkit-transform: rotate(360deg);
           transform: rotate(360deg); } }
@@ -433,14 +439,14 @@ input {
     margin: 0 auto 50px; }
   #footer #social a {
     font-size: 24px;
-    color: #fff;
+    color: #F7A668;
     padding: 0 5px; }
     #footer #social a:hover {
-      color: #F5E34D; }
+      color: white; }
   #footer p {
     padding: 10px 0;
     margin: 0;
-    color: #fff; }
+    color: #F7A668; }
 
 @media screen and (max-width: 767px) {
   .wrap {
