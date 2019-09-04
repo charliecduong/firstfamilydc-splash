@@ -360,8 +360,7 @@ input {
         border-color: white;
         color: white; }
       #input-container #mc_embed_signup #submit-button.on {
-        opacity: 1;
-        animation: fadeIn 200ms linear; }
+        opacity: 1; }
 
 .mix {
   padding: 80px 0 0;
