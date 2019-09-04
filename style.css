@@ -303,7 +303,16 @@ input {
 
 #logo {
   fill: #000;
-  opacity: 0; }
+  opacity: 0;
+  -webkit-animation: fadeIn 2s ease;
+  -moz-animation: fadeIn 2s ease;
+  animation: fadeIn 2s ease;
+  -webkit-animation-delay: 2s;
+  -moz-animation-delay: 2s;
+  animation-delay: 2s;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards; }
 
 #logo-draw {
   stroke: rgba(0, 0, 0, 0.5);
@@ -351,8 +360,7 @@ input {
         border-color: white;
         color: white; }
       #input-container #mc_embed_signup #submit-button.on {
-        opacity: 1;
-        animation: fadeIn 200ms linear; }
+        opacity: 1; }
 
 .mix {
   padding: 80px 0 0;
