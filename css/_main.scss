@@ -7,11 +7,7 @@
   //height: 92vh;
   //margin: 50px 0;
   //margin-bottom: 100px;
-<<<<<<< HEAD
-  background: #161616 url(images/gc-bg.png) no-repeat 50%;
-=======
-  background: #FCD271 url() no-repeat 100%;
->>>>>>> parent of 4ba2f7d... revert
+  background: #FCD271 url(images/background-cloud.jpg) no-repeat 100%;
   background-size: cover;
   .marquee {
   position: relative;
@@ -28,7 +24,7 @@
     max-width: 230px;
     height: auto;
     margin: 0 auto;
-    background: #F5E34D;
+    background: #fff;
     border-radius: 0px 0px 10px 10px;
     p {
       padding: 10px;
@@ -73,7 +69,7 @@
     .logo {
       display: block;
       width: 100%;
-      max-width: 500px;
+      max-width: 250px;
       margin: 0 auto;
       img {
         margin-bottom: 50px;
@@ -88,14 +84,14 @@
       a.button {
         display: block;
         width: 100%;
-        background: #F5E34D;
-        border-color: #F5E34D;
+        background: #000;
+        border-color: #000;
         border-radius: 10px;
         text-align: center;
         &:hover {
           background: transparent;
-          border-color: #F5E34D;
-          color: #F5E34D;
+          border-color: #fff;
+          color: #fff;
         }
       }
       /*img {
