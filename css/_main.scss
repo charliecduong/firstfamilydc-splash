@@ -7,7 +7,11 @@
   //height: 92vh;
   //margin: 50px 0;
   //margin-bottom: 100px;
-  background: #000 url() no-repeat 100%;
+<<<<<<< HEAD
+  background: #161616 url(images/gc-bg.png) no-repeat 50%;
+=======
+  background: #FCD271 url() no-repeat 100%;
+>>>>>>> parent of 4ba2f7d... revert
   background-size: cover;
   .marquee {
   position: relative;
@@ -69,10 +73,17 @@
     .logo {
       display: block;
       width: 100%;
-      max-width: 250px;
+      max-width: 500px;
       margin: 0 auto;
       img {
         margin-bottom: 50px;
+        position: relative;
+        display: block;
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 0 0 50px 0;
+
       }
       a.button {
         display: block;
@@ -204,7 +215,7 @@
 #input-container {
   max-width: 500px;
       padding: 75px 0 20px !important;
-      color: white;
+      color: $color-event;
   .countdown-container {
     margin-bottom: 100px;
     text-align: center;
@@ -224,17 +235,17 @@
     .mc-field-group {
       input {
         display: block;
-        color: white;
-        border-bottom: 2px white solid;
+        color: $color-event;
+        border-bottom: 2px $color-event solid;
         &::placeholder {
-          color: white;
+          color: $color-event;
         }
       }
     }
     #submit-button {
       opacity: 0;
-      color: white;
-      border-color: white;
+      color: $color-event;
+      border-color: $color-event;
       border-radius: 10px;
       &:hover {
         background: transparent;
@@ -243,7 +254,7 @@
       }
       &.on {
         opacity: 1;
-        animation: fadeIn 200ms linear;
+        //animation: fadeIn 200ms linear;
       }
     }
   }
@@ -297,6 +308,7 @@
   max-width: 800px !important;
   img {
     width: 100%;
+    margin: 10px 0;
   }
   a.button {
     display: block;
@@ -328,7 +340,6 @@
       @media screen and (min-width: $mobile-breakpoint) {
         -webkit-transition: -webkit-transform .8s ease-in-out;
         transition: transform .8s ease-in-out;
-        stroke: white;
         &:hover {
           -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
@@ -349,7 +360,7 @@
   #social {
     a {
       font-size: 24px;
-      color: white;
+      color: $color-event;
       padding: 0 5px;
       &:hover {
         color: white;
@@ -359,7 +370,7 @@
   p {
     padding: 10px 0;
     margin: 0;
-    color: white;
+    color: $color-event;
   }
 }
 @media screen and (max-width: $mobile-breakpoint) {

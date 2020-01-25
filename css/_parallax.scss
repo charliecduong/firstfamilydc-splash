@@ -73,6 +73,7 @@
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    color: white;
     .community-details ul {
       list-style: none;
       padding: 15px 0;
@@ -140,6 +141,10 @@
     z-index: 3; /* slide over group 7 */
   }
   #group7 .parallax__layer--base {
-    background: url("images/ds2.jpg");
+    background: url("images/gradient_2.jpg");
     background-size: cover;
+  }
+
+  .community-dropdown {
+    color: white;
   }
