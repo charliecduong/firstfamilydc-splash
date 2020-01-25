@@ -1,546 +1,73 @@
-html, body {
-  margin: 0;
-  padding: 0;
-  font-size: 18px;
-  text-align: left;
-  line-height: 1.6;
-  color: #000;
-  background-color: #fff;
-  font-family: "Poppins", Helvetica, Arial, Sans-Serif;
-  font-weight: bold; }
+/*
+Error: Invalid CSS after "...) no-repeat 50%": expected "{", was ";"
+        on line 11 of /Users/charliecduong/Documents/Workstation/firstfamilydc-splash/css/_main.scss
+        from line 4 of /Users/charliecduong/Documents/Workstation/firstfamilydc-splash/style.scss
 
-* {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
+6:   //width: 100vw;
+7:   //height: 92vh;
+8:   //margin: 50px 0;
+9:   //margin-bottom: 100px;
+10: <<<<<<< HEAD
+11:   background: #161616 url(images/gc-bg.png) no-repeat 50%;
+12: =======
+13:   background: #FCD271 url() no-repeat 100%;
+14: >>>>>>> parent of 4ba2f7d... revert
+15:   background-size: cover;
+16:   .marquee {
 
-h1, h2, h3, h4, h5, h6 {
-  margin: 0 0 10px 0;
-  border: 0;
-  padding: 0; }
-
-h1,
-h2,
-h3,
-h4 {
-  line-height: 1.25; }
-
-h1 {
-  font-size: 4em; }
-
-h2 {
-  font-size: 3em;
-  font-family: "Libre Baskerville", Georgia, Serif;
-  font-weight: bold; }
-
-h3 {
-  font-size: 1.8em;
-  font-family: "Libre Baskerville", Georgia, Serif; }
-
-h4 {
-  font-size: 1.5em; }
-
-a {
-  margin: 0 0 1em 0;
-  text-decoration: none;
-  color: #fff;
-  font-weight: 700;
-  -o-transition: .5s;
-  -ms-transition: .5s;
-  -moz-transition: .5s;
-  -webkit-transition: .5s;
-  transition: .5s; }
-  a:hover {
-    color: white; }
-
-p {
-  margin: 0 0 1em 0; }
-
-button,
-.button {
-  padding: 10px 15px;
-  border: 2px solid #000;
-  color: #000;
-  cursor: pointer;
-  -o-transition: .5s;
-  -ms-transition: .5s;
-  -moz-transition: .5s;
-  -webkit-transition: .5s;
-  transition: .5s; }
-  button:hover,
-  .button:hover {
-    background: transparent;
-    color: #fff; }
-
-input {
-  background: transparent;
-  margin-bottom: 10px;
-  font-size: 18px;
-  font-family: "Poppins", Helvetica, Arial, Sans-Serif;
-  border-radius: 0;
-  -webkit-appearance: none;
-  font-weight: bold; }
-  input:focus {
-    outline: none; }
-  input[type=email], input[type=text] {
-    color: #000;
-    width: 100%;
-    max-width: 500px;
-    padding: 10px 0px;
-    border: 2px solid #000;
-    border-top: none;
-    border-left: none;
-    border-right: none; }
-    input[type=email]::placeholder, input[type=text]::placeholder {
-      color: #000; }
-  input[type=submit] {
-    padding: 10px 15px;
-    border: 2px solid #000;
-    color: #000;
-    cursor: pointer;
-    -o-transition: .5s;
-    -ms-transition: .5s;
-    -moz-transition: .5s;
-    -webkit-transition: .5s;
-    transition: .5s; }
-    input[type=submit]:hover {
-      background: #000;
-      color: #fff; }
-
-.mobile-only {
-  display: none; }
-
-.desktop-only {
-  display: block; }
-
-@media screen and (max-width: 767px) {
-  html, body {
-    font-size: 20px; }
-
-  h1 {
-    font-size: 3em; }
-
-  h2 {
-    font-size: 2em; }
-
-  h3 {
-    font-size: 1.5em; }
-
-  p {
-    margin: 0 0 1em 0; }
-
-  .mobile-only {
-    display: block; }
-
-  .desktop-only {
-    display: none; } }
-#main {
-  position: relative;
-  display: block;
-  background: #161616 url(images/gc-bg.png) no-repeat 50%;
-  background-size: cover; }
-  #main .marquee {
-    position: relative;
-    width: 100vw;
-    max-width: 100%;
-    height: 40px;
-    overflow-x: hidden;
-    font-size: 30px; }
-  #main .tab .tab-inner {
-    text-align: center;
-    width: 100%;
-    max-width: 230px;
-    height: auto;
-    margin: 0 auto;
-    background: #F5E34D;
-    border-radius: 0px 0px 10px 10px; }
-    #main .tab .tab-inner p {
-      padding: 10px; }
-  #main .track {
-    position: absolute;
-    white-space: nowrap;
-    will-change: transform;
-    animation: marquee 35s linear infinite; }
-  #main .section {
-    display: block;
-    position: relative;
-    width: 100%;
-    margin: 0 auto;
-    padding: 20px 0;
-    overflow: auto; }
-  #main .video-container #story {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
-    padding-bottom: 25px; }
-  #main .video-container .video-elements {
-    text-align: center; }
-    #main .video-container .video-elements .title {
-      font-size: 700;
-      font-style: italic; }
-  #main .header {
-    width: 100%;
-    padding: 50px 0; }
-    #main .header .logo {
-      display: block;
-      width: 100%;
-      max-width: 500px;
-      margin: 0 auto;
-      /*img {
-        @media screen and (min-width: $mobile-breakpoint) {
-          -webkit-transition: -webkit-transform .8s ease-in-out;
-          transition: transform .8s ease-in-out;
-          &:hover {
-            -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-          }
-        }
-      }*/ }
-      #main .header .logo img {
-        margin-bottom: 50px;
-        position: relative;
-        display: block;
-        width: 100%;
-        max-width: 500px;
-        margin: 0 auto;
-        padding: 0 0 50px 0; }
-      #main .header .logo a.button {
-        display: block;
-        width: 100%;
-        background: #F5E34D;
-        border-color: #F5E34D;
-        border-radius: 10px;
-        text-align: center; }
-        #main .header .logo a.button:hover {
-          background: transparent;
-          border-color: #F5E34D;
-          color: #F5E34D; }
-    #main .header .hero {
-      width: 100%;
-      max-width: 767px;
-      margin: 0 auto;
-      padding-bottom: 75px; }
-  #main .flower {
-    display: block;
-    position: relative;
-    max-width: 500px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 50px 0; }
-    #main .flower #date h1 {
-      font-family: "Coda Caption", Helvetica, Arial, Sans-Serif;
-      text-align: center;
-      padding-bottom: 25px; }
-      @media screen and (max-width: 767px) {
-        #main .flower #date h1 {
-          font-size: 2em; } }
-    #main .flower .flower-inner img {
-      width: 100%;
-      max-width: 500px; }
-  #main .flyer {
-    width: 100%;
-    margin-bottom: 25px; }
-  #main .content {
-    text-align: center; }
-    #main .content .title {
-      font-size: 700;
-      font-style: italic; }
-
-.wrap {
-  position: relative;
-  max-width: 767px;
-  margin: 0 auto; }
-
-.background {
-  position: fixed;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px; }
-
-.gradient1 {
-  background-color: #f3796a;
-  background-image: -webkit-linear-gradient(top, #f3796a, #3F8F73);
-  background-image: linear-gradient(to bottom,#f3796a, #3F8F73);
-  -webkit-animation: fadeOutIn 25s ease;
-  -moz-animation: fadeOutIn 25s ease;
-  animation: fadeOutIn 25s ease;
-  -webkit-animation-fill-mode: forwards;
-  -moz-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-iteration-count: infinite;
-  -moz-animation-iteration-count: infinite;
-  animation-iteration-count: infinite; }
-
-.gradient2 {
-  background-color: #3A9FB3;
-  background-image: -webkit-linear-gradient(top, #3A9FB3, #3F8F73);
-  background-image: linear-gradient(to bottom,#3A9FB3, #3F8F73);
-  -webkit-animation: fadeInOut 25s ease;
-  -moz-animation: fadeInOut 25s ease;
-  animation: fadeInOut 25s ease;
-  -webkit-animation-fill-mode: forwards;
-  -moz-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-iteration-count: infinite;
-  -moz-animation-iteration-count: infinite;
-  animation-iteration-count: infinite; }
-
-#svg-container .svg-wrapper {
-  display: block;
-  position: absolute;
-  width: 100%;
-  top: 50px; }
-  #svg-container .svg-wrapper svg {
-    display: block !important;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto; }
-    @media screen and (max-width: 320px) {
-      #svg-container .svg-wrapper svg {
-        width: 250px !important; } }
-
-#logo {
-  fill: #000;
-  opacity: 0;
-  -webkit-animation: fadeIn 2s ease;
-  -moz-animation: fadeIn 2s ease;
-  animation: fadeIn 2s ease;
-  -webkit-animation-delay: 2s;
-  -moz-animation-delay: 2s;
-  animation-delay: 2s;
-  -webkit-animation-fill-mode: forwards;
-  -moz-animation-fill-mode: forwards;
-  animation-fill-mode: forwards; }
-
-#logo-draw {
-  stroke: rgba(0, 0, 0, 0.5);
-  stroke-width: 10px;
-  -webkit-animation: fadeOut 1s ease;
-  -moz-animation: fadeOut 1s ease;
-  animation: fadeOut 1s ease;
-  -webkit-animation-delay: 2.75s;
-  -moz-animation-delay: 2.75s;
-  animation-delay: 2.75s;
-  -webkit-animation-fill-mode: forwards;
-  -moz-animation-fill-mode: forwards;
-  animation-fill-mode: forwards; }
-
-#input-container {
-  max-width: 500px;
-  padding: 75px 0 20px !important;
-  color: #F7A668; }
-  #input-container .countdown-container {
-    margin-bottom: 100px;
-    text-align: center; }
-    #input-container .countdown-container .title {
-      font-size: 700;
-      font-style: italic; }
-  #input-container .title {
-    font-family: "Coda Caption", Helvetica, Arial, Sans-Serif;
-    text-align: center;
-    color: red; }
-  #input-container #mc_embed_signup {
-    text-align: center;
-    margin-bottom: 50px; }
-    #input-container #mc_embed_signup .mc-field-group input {
-      display: block;
-      color: #F7A668;
-      border-bottom: 2px #F7A668 solid; }
-      #input-container #mc_embed_signup .mc-field-group input::placeholder {
-        color: #F7A668; }
-    #input-container #mc_embed_signup #submit-button {
-      opacity: 0;
-      color: #F7A668;
-      border-color: #F7A668;
-      border-radius: 10px; }
-      #input-container #mc_embed_signup #submit-button:hover {
-        background: transparent;
-        border-color: white;
-        color: white; }
-      #input-container #mc_embed_signup #submit-button.on {
-        opacity: 1; }
-
-.mix {
-  padding: 80px 0 0;
-  max-width: 500px;
-  margin: 0 auto; }
-
-#content {
-  width: 100% !important; }
-  #content h3 {
-    font-family: "Coda Caption", Helvetica, Arial, Sans-Serif;
-    font-size: 1.25em; }
-  #content .row {
-    display: flex;
-    margin-bottom: 50px; }
-  #content .row-2 {
-    margin-bottom: 50px; }
-  #content .column {
-    text-align: center;
-    flex: 50%; }
-  #content .column-2 {
-    text-align: center;
-    flex: 100%; }
-    #content .column-2 .dj {
-      max-width: 450px; }
-    #content .column-2:first-child {
-      margin-bottom: 50px; }
-  @media screen and (max-width: 767px) {
-    #content .row {
-      display: block; }
-    #content .column {
-      margin-bottom: 50px; } }
-
-#bloom-image {
-  max-width: 800px !important; }
-  #bloom-image img {
-    width: 100%;
-    margin: 10px 0; }
-  #bloom-image a.button {
-    display: block;
-    max-width: 300px;
-    width: 100%;
-    margin: 0 auto;
-    background: #F5E34D;
-    border-color: #F5E34D;
-    border-radius: 10px;
-    text-align: center; }
-    #bloom-image a.button:hover {
-      background: transparent;
-      border-color: #F5E34D;
-      color: #F5E34D; }
-
-#footer {
-  font-size: 8px;
-  position: relative;
-  text-align: center; }
-  #footer .logo {
-    width: 100%;
-    max-width: 100px;
-    margin: 0 auto 25px; }
-    @media screen and (min-width: 767px) {
-      #footer .logo img {
-        -webkit-transition: -webkit-transform .8s ease-in-out;
-        transition: transform .8s ease-in-out; }
-        #footer .logo img:hover {
-          -webkit-transform: rotate(360deg);
-          transform: rotate(360deg); } }
-  #footer .quote {
-    font-size: 18px;
-    font-family: "Libre Baskerville", Georgia, Serif;
-    font-style: italic;
-    font-weight: bold;
-    text-align: center;
-    max-width: 300px;
-    width: 100%;
-    margin: 0 auto 50px; }
-  #footer #social a {
-    font-size: 24px;
-    color: #F7A668;
-    padding: 0 5px; }
-    #footer #social a:hover {
-      color: white; }
-  #footer p {
-    padding: 10px 0;
-    margin: 0;
-    color: #F7A668; }
-
-@media screen and (max-width: 767px) {
-  .wrap {
-    margin: 0 15px; } }
-@keyframes marquee {
-  from {
-    transform: translateX(0); }
-  to {
-    transform: translateX(-50%); } }
-@-webkit-keyframes fadeInOut {
-  0% {
-    opacity: 0; }
-  50% {
-    opacity: 1; }
-  100% {
-    opacity: 0; } }
-@-moz-keyframes fadeInOut {
-  0% {
-    opacity: 0; }
-  50% {
-    opacity: 1; }
-  100% {
-    opacity: 0; } }
-@keyframes fadeInOut {
-  0% {
-    opacity: 0; }
-  50% {
-    opacity: 1; }
-  100% {
-    opacity: 0; } }
-@-webkit-keyframes fadeOutIn {
-  0% {
-    opacity: 1; }
-  50% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-@-moz-keyframes fadeOutIn {
-  0% {
-    opacity: 1; }
-  50% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-@keyframes fadeOutIn {
-  0% {
-    opacity: 1; }
-  50% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
-@-moz-keyframes fadeIn {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
-@keyframes fadeIn {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
-@-webkit-keyframes fadeOut {
-  from {
-    opacity: 1; }
-  to {
-    opacity: 0; } }
-@-moz-keyframes fadeOut {
-  from {
-    opacity: 1; }
-  to {
-    opacity: 0; } }
-@keyframes fadeOut {
-  from {
-    opacity: 1; }
-  to {
-    opacity: 0; } }
-@-webkit-keyframes up {
-  0% {
-    top: 54%; }
-  100% {
-    top: 50%; } }
-@-moz-keyframes up {
-  0% {
-    top: 54%; }
-  100% {
-    top: 50%; } }
-@keyframes up {
-  0% {
-    top: 54%; }
-  100% {
-    top: 50%; } }
-
-/*# sourceMappingURL=style.css.map */
+Backtrace:
+/Users/charliecduong/Documents/Workstation/firstfamilydc-splash/css/_main.scss:11
+/Users/charliecduong/Documents/Workstation/firstfamilydc-splash/style.scss:4
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1278:in `expected'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1208:in `expected'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1203:in `tok!'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:677:in `block'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:747:in `declaration_or_ruleset'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:697:in `block_child'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:678:in `block'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:670:in `ruleset'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:696:in `block_child'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:137:in `stylesheet'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:41:in `parse'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:414:in `_to_tree'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:321:in `to_tree'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:327:in `block in visit_import'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:88:in `block in with_import'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:88:in `with_import'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:326:in `visit_import'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
+/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:22:in `load'
+/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...) no-repeat 50%\": expected \"{\", was \";\"\A         on line 11 of /Users/charliecduong/Documents/Workstation/firstfamilydc-splash/css/_main.scss\A         from line 4 of /Users/charliecduong/Documents/Workstation/firstfamilydc-splash/style.scss\A \A 6:   //width: 100vw;\A 7:   //height: 92vh;\A 8:   //margin: 50px 0;\A 9:   //margin-bottom: 100px;\A 10: <<<<<<< HEAD\A 11:   background: #161616 url(images/gc-bg.png) no-repeat 50%;\A 12: =======\A 13:   background: #FCD271 url() no-repeat 100%;\A 14: >>>>>>> parent of 4ba2f7d... revert\A 15:   background-size: cover;\A 16:   .marquee {"; }
