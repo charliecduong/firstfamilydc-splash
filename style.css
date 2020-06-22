@@ -136,7 +136,7 @@ input {
 #main {
   position: relative;
   display: block;
-  background: #0c0c0c no-repeat 100%;
+  background: #000 no-repeat 100%;
   background-size: cover; }
   #main .marquee {
     position: relative;
